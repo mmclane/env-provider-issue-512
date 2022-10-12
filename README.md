@@ -43,3 +43,9 @@ module.other.env0_environment.nothing: Refreshing state... [id=213e1cea-d5af-456
 1. In all three providers.tf files, reset to **version = "1.1.1"**
 2. Run **terraform init --upgrade** and verify that it installs env0/env0 v1.1.1
 3. Run **terraform plan --target module.m3test.env0_environment.nothing** and verify it shows your change.
+
+## Additional Notes
+
+- I get this error with both terraform version 1.1.8 and 1.3.2.
+- Sometimes I need to make a change before the error happens (step 3 above) and other times I do not need to make a change.
+
